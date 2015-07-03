@@ -1,0 +1,15 @@
+.commentrate-vote {
+	color: #aaa;
+	font-weight: bold;
+	font-size: 14px;
+	position: absolute;
+	right: 0;
+}
+
+.commentrate-positive-vote {
+	color: #390;
+}
+
+.commentrate-negative-vote {
+	color: #f00;	
+}
