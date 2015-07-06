@@ -5,16 +5,6 @@ class PluginCommentrate_ModuleCommentrate extends Module {
 	public function Init() {}
 
 	/**
-	*	@return int id топика из URL
-	*/
-	public function GetTopicId() {
-		$iTopicId = 0;
-		preg_match('/(\d+)\.html$/i', Router::GetPathWebCurrent(), $matches);
-		$iTopicId = $matches[1];
-		return $iTopicId;
-	}
-
-	/**
 	*	Возвращает 5 комментариев заданного пользовател, или 5 самых популярных, если пользователь не задан
 	*	@param int iTargetId id владельца комментариев
 	*	@param int iUserId id пользоватея, чьи комментарии выбирать

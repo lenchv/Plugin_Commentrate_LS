@@ -13,7 +13,7 @@ Config::Set('block.commentrate', array(
 		'blocks' => array(
 			'right' => array(
 				array(	
-					'block' => 'commentrate', 
+					'block' => 'blocks/block.commentrate.tpl', 
 					'priority' => 150, 
 					'params' => array('plugin' => 'Commentrate')
 				)
