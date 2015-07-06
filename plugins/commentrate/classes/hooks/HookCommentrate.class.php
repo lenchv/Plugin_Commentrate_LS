@@ -15,12 +15,11 @@ class PluginCommentrate_HookCommentrate extends Hook {
 
 	public function func_commentrate_items() {
 		$oUser = $this->User_GetUserCurrent();
-		
-		if ($iTopicId != -1) {
+		if ($this->iTopicId != -1) {
 			if ($this->User_IsAuthorization()) {
-	    		$aComments = $this->PluginCommentrate_Commentrate_GetCommentsByUser($iTopicId, $oUser->GetId());
+	    		$aComments = $this->PluginCommentrate_Commentrate_GetCommentsByUser($this->iTopicId, $oUser->GetId());
 	    	} else {
-		    	$aComments = $this->PluginCommentrate_Commentrate_GetCommentsByUser($iTopicId);
+		    	$aComments = $this->PluginCommentrate_Commentrate_GetCommentsByUser($this->iTopicId);
 	    	}
 		} else {
 			return "";
